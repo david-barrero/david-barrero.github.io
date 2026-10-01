@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Barrero | Business &amp; Data Analyst</title>
+  <meta name="description" content="David Barrero, Economics graduate from the University of Georgia and business and data analyst. Projects in R, econometrics, and predictive modeling, plus a Best in Show win at ASA DataFest 2026.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='white' stroke='black' stroke-width='4'/><polygon points='50,30 66,42 60,61 40,61 34,42' fill='black'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#about">Skip to content</a>
+
+<header class="topbar">
+  <a class="brand" href="#top">David Barrero</a>
+  <nav aria-label="Main">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HERO: the penalty kick ============ -->
+<main id="top">
+<section class="hero" aria-label="Pick a section by shooting at the goal">
+  <div class="hero-text">
+    <p class="kicker">David Barrero · Business &amp; Data Analyst</p>
+    <h1>Take your <span>shot.</span></h1>
+    <p class="hint">Pick a target in the goal, or drag the ball and let go.</p>
+  </div>
+
+  <div class="stage" id="stage">
+    <canvas id="goal3d" aria-hidden="true"></canvas>
+    <div class="targets" role="group" aria-label="Sections">
+      <button class="target" data-target="projects" data-zone="tl">Projects</button>
+      <button class="target" data-target="resume" data-zone="tr">Resume</button>
+      <button class="target" data-target="about" data-zone="c">About</button>
+      <button class="target" data-target="skills" data-zone="bl">Skills</button>
+      <button class="target" data-target="contact" data-zone="br">Contact</button>
+    </div>
+    <div id="goal-flash" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container about-grid">
+    <img class="headshot" src="assets/headshot.jpg" alt="David Barrero" width="600" height="600">
+    <div>
+      <p class="eyebrow">About me</p>
+      <h2>Hey, I'm David.</h2>
+      <p>I'm a proud first-generation Colombian graduate of the University of Georgia, where I studied Economics with a business analytics focus and minored in statistics and sports management. I got into data because I like figuring out what's actually going on behind the numbers, and some of my favorite moments are when the first answer turns out to be wrong. That's pretty much how my team won Best in Show at the 2026 UGA DataFest.</p>
+      <p>When I'm not working with data, you'll usually find me playing soccer (I played intramurals at UGA) or slowly working on my German. I also speak Spanish, I've worked as an interpreter, and I've spent the last few years managing rental properties, so I'm used to explaining numbers to people who don't live in spreadsheets. Right now I'm looking for a business or data analyst role in the Atlanta area.</p>
+      <div class="quick">
+        <span><b>Based in</b> Snellville, GA</span>
+        <span><b>Open to</b> Business &amp; data analyst roles, Atlanta area</span>
+        <span><b>Languages</b> English, Spanish</span>
+      </div>
+    </div>
+  </div>
+  <a class="back" href="#top">⚽ Back to the spot</a>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section alt">
+  <div class="container">
+    <p class="eyebrow">Projects</p>
+    <h2>Selected work</h2>
+
+    <div class="cards">
+
+      <article class="card featured">
+        <div class="card-media stat-panel" aria-hidden="true">
+          <div><strong>7M+</strong><span>patient encounters</span></div>
+          <div><strong>26,292</strong><span>fracture patients tracked</span></div>
+          <div><strong>1.52</strong><span>odds ratio, MyChart users</span></div>
+        </div>
+        <div class="card-body">
+          <p class="award">🏆 Best in Show · ASA DataFest 2026</p>
+          <h3>Who Gets Lost in Recovery?</h3>
+          <p class="meta">University of Georgia · Team 5Sigma (5 members) · R, Python, Quarto</p>
+          <p>Stormont Vail Health gave DataFest teams over 7 million patient encounters and asked us to map the patient journey. We narrowed in on fractures, because their diagnosis codes record each stage of recovery, and flagged patients whose healing went wrong. Smoking and age 65+ raised the odds of a complication as expected. Married patients and MyChart users also had more recorded complications, which we traced to them staying in the system long enough to be diagnosed, while disconnected patients quietly dropped out.</p>
+          <p class="role"><b>My role:</b> Identified why to focus on bone injuries, interpreted the chi-squared and logistic regression results, built the presentation, and presented to the judges.</p>
+          <p class="private">Code is in a private team repository.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card-media" src="assets/wage-gap.png" alt="Career log-wage profiles for men and women with quadratic fits" loading="lazy">
+        <div class="card-body">
+          <h3>The Gender Wage Gap Over a Career</h3>
+          <p class="meta">UGA Economics coursework · R · Census CPS data</p>
+          <p>Using 46,000+ full-time workers from the March 2022 Current Population Survey, I estimated a 15% hourly wage gap between women and men of the same age. Controlling for education made it grow to 21%, since women in the sample were more likely to hold a college degree. The gap roughly doubles over the first ten years of a career.</p>
+          <a class="btn" href="https://github.com/david-barrero/gender-wage-gap" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card-media" src="assets/hermes.png" alt="Price index for comparable Hermès bags vs. the average sale price" loading="lazy">
+        <div class="card-body">
+          <h3>Are Hermès Bags a Good Investment?</h3>
+          <p class="meta">Client recommendation · R · 1,255 auction sales</p>
+          <p>The average auction price for Birkin and Kelly bags rose over time, but a bag-level regression showed comparable bags actually lost about 3.7% of their value per year. The rising average came from more rare Himalaya and diamond-hardware bags being sold. My recommendation: don't count on appreciation, and only buy the rarest pieces.</p>
+          <a class="btn" href="https://github.com/david-barrero/hermes-auction-prices" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card-media" src="assets/housing.png" alt="Prediction error on test homes for each model" loading="lazy">
+        <div class="card-body">
+          <h3>Predicting Home Prices in Ames, Iowa</h3>
+          <p class="meta">Predictive modeling · R · OLS, lasso, ridge</p>
+          <p>I compared five regression models plus lasso and ridge on 460 homes the models had never seen. The model with the best in-sample fit overfit, while a smaller model cut the typical prediction error to about $32,800. The lesson: test on held-out data before trusting R².</p>
+          <a class="btn" href="https://github.com/david-barrero/house-price-prediction" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+  <a class="back" href="#top">⚽ Back to the spot</a>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section">
+  <div class="container">
+    <p class="eyebrow">Skills</p>
+    <h2>What I work with</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul class="chips"><li>R (tidyverse, ggplot2, glmnet)</li><li>Python (pandas)</li><li>SQL</li><li>Excel</li><li>JMP</li><li>R Markdown / Quarto</li><li>Git &amp; GitHub</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Methods</h3>
+        <ul class="chips"><li>OLS regression</li><li>Logistic regression</li><li>Lasso &amp; ridge</li><li>Hypothesis testing</li><li>Predictive modeling &amp; validation</li><li>Data cleaning</li><li>Data visualization</li></ul>
+      </div>
+      <div class="skill-group">
+        <h3>Beyond the data</h3>
+        <ul class="chips"><li>Bilingual English / Spanish</li><li>Certified interpreter &amp; translator</li><li>Presenting to non-technical audiences</li><li>Budgeting &amp; forecasting</li></ul>
+      </div>
+    </div>
+  </div>
+  <a class="back" href="#top">⚽ Back to the spot</a>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section id="resume" class="section alt">
+  <div class="container">
+    <p class="eyebrow">Resume</p>
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li><span class="when">April 2026</span><div><h3>ASA DataFest 2026, Best in Show</h3><p>Team 5Sigma, University of Georgia</p></div></li>
+      <li><span class="when">May 2026</span><div><h3>BBA in Economics, University of Georgia</h3><p>Terry College of Business · Business Analytics emphasis · Minors in Statistics and Sports Management · GPA 3.6</p></div></li>
+      <li><span class="when">2025 – Present</span><div><h3>Research Associate, Economics Society Cohort</h3><p>Year-long, faculty-mentored econometric research program</p></div></li>
+      <li><span class="when">2024</span><div><h3>Gender Wage Gap Analysis</h3><p>Econometric modeling with Census CPS data in R, UGA Economics</p></div></li>
+      <li><span class="when">2023 – Present</span><div><h3>Property Manager, Capifund Properties</h3><p>Budgets, forecasting, lease administration, 100% occupancy</p></div></li>
+            <li><span class="when">2022</span><div><h3>Operations Intern, Atlanta Gladiators</h3><p>Game-day operations and administration</p></div></li>
+    </ol>
+    <a class="btn btn-big" href="assets/David_Barrero_Resume.pdf" target="_blank" rel="noopener">Download full resume (PDF)</a>
+  </div>
+  <a class="back" href="#top">⚽ Back to the spot</a>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="container contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's talk.</h2>
+    <p>I'm actively looking for business and data analyst roles. The fastest way to reach me is email.</p>
+    <div class="contact-links">
+      <a class="contact-item" href="mailto:davidbarrero0410@gmail.com"><span>Email</span>davidbarrero0410@gmail.com</a>
+      <a class="contact-item" href="tel:+14707794441"><span>Phone</span>(470) 779-4441</a>
+      <a class="contact-item" href="https://www.linkedin.com/in/david-barrero1" target="_blank" rel="noopener"><span>LinkedIn</span>linkedin.com/in/david-barrero1</a>
+      <a class="contact-item" href="https://github.com/david-barrero" target="_blank" rel="noopener"><span>GitHub</span>github.com/david-barrero</a>
+    </div>
+  </div>
+  <a class="back" href="#top">⚽ Back to the spot</a>
+</section>
+</main>
+
+<footer>© 2026 David Barrero</footer>
+
+<script src="assets/vendor/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
